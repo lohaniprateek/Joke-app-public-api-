@@ -1,0 +1,156 @@
+/* Heading style */
+h1 {
+    font-family: 'Playfair Display', serif; /* Elegant serif font */
+    font-size: 3em; /* Adjust font size for responsiveness */
+    font-weight: 900; /* Extra bold */
+    background: linear-gradient(90deg, #ff8a00, #e52e71); /* Gradient color */
+    color: wheat; /* Text color */
+    text-align: center; /* Center the heading */
+    text-transform: uppercase; /* All caps */
+    letter-spacing: 3px; /* Wide spacing between letters */
+    margin-bottom: 20px; /* Space below the heading */
+}
+
+/* Container for the entire disclaimer */
+.container {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9; /* Light background */
+    border: 1px solid #ddd; /* Soft border */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px; /* Space inside the container */
+    max-width: 90%; /* Use percentage for width for responsiveness */
+    margin: 20px auto; /* Center the container */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    overflow: hidden; /* Prevent overflow from breaking layout */
+}
+
+/* Flags section (categories) */
+.flags {
+    display: flex; /* Display flags in a row */
+    justify-content: space-between; /* Space out the flags */
+    margin-bottom: 15px; /* Space below the flags */
+    flex-wrap: wrap; /* Allow flags to wrap to the next line if necessary */
+}
+
+.flag {
+    background-color: #ff8a00; /* Background color for flags */
+    color: #fff; /* White text */
+    padding: 5px 10px; /* Padding inside flags */
+    border-radius: 20px; /* Rounded edges */
+    font-size: 0.9em; /* Slightly smaller font */
+    text-transform: uppercase; /* Uppercase text */
+    font-weight: 600; /* Semi-bold */
+    margin-bottom: 5px; /* Space below flags to avoid overlap */
+}
+
+/* Joke section (setup/plot) */
+.joke {
+    font-size: 1.2em; /* Larger text for the joke */
+    color: #333; /* Dark text color */
+    margin-bottom: 15px; /* Space below the joke */
+    padding: 10px; /* Padding inside the joke section */
+    background-color: #fff; /* White background for emphasis */
+    border-left: 4px solid #e52e71; /* Accent border on the left */
+    border-radius: 5px; /* Slightly rounded corners */
+    max-height: 200px; /* Limit the height of the joke section */
+    overflow-y: auto; /* Add vertical scrollbar for long text */
+}
+
+/* Delivery section (punchline) */
+.crack {
+    font-size: 1.4em; /* Larger text for the punchline */
+    color: #e52e71; /* Bold color for the punchline */
+    font-weight: 700; /* Bold font */
+    padding: 15px; /* Padding inside the delivery section */
+    background-color: #ff8a00; /* Contrasting background */
+    border-radius: 5px; /* Slightly rounded corners */
+    text-align: center; /* Center the punchline text */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    max-height: 150px; /* Limit the height of the delivery section */
+    overflow-y: auto; /* Add vertical scrollbar for long text */
+}
+
+/* General button styling */
+.btn {
+    font-family: 'Poppins', sans-serif; /* Clean and modern font */
+    font-size: 1em; /* Base font size */
+    font-weight: 600; /* Semi-bold */
+    color: #fff; /* White text */
+    background-color: #e52e71; /* Vibrant background color */
+    border: none; /* No border */
+    border-radius: 30px; /* Fully rounded corners */
+    padding: 12px 24px; /* Padding inside the button */
+    cursor: pointer; /* Pointer cursor on hover */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition effects */
+}
+
+/* Hover effect */
+.btn:hover {
+    background-color: #ff8a00; /* Change background on hover */
+    transform: translateY(-3px); /* Slightly lift the button */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Enhance shadow on hover */
+}
+
+/* Active effect */
+.btn:active {
+    background-color: #d94f70; /* Slightly darker shade on click */
+    transform: translateY(0); /* Return to original position */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Original shadow */
+}
+
+/* Disabled button styling */
+.btn:disabled {
+    background-color: #ccc; /* Gray background for disabled state */
+    color: #666; /* Gray text color */
+    cursor: not-allowed; /* Not-allowed cursor */
+    box-shadow: none; /* No shadow */
+}
+
+/* Media Queries for Responsive Design */
+
+/* For tablets and medium-sized devices */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.5em; /* Slightly smaller font size */
+        margin-bottom: 20px; /* Adjust margin */
+    }
+
+    .container {
+        max-width: 95%; /* Increase container width */
+        padding: 15px; /* Adjust padding */
+    }
+
+    .joke, .crack {
+        font-size: 1.1em; /* Adjust font size */
+        max-height: 150px; /* Adjust height limit */
+    }
+
+    .btn {
+        font-size: 0.9em; /* Slightly smaller font size */
+        padding: 10px 20px; /* Adjust padding */
+    }
+}
+
+/* For mobile devices */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 2em; /* Smaller font size */
+        margin-bottom: 15px; /* Adjust margin */
+    }
+
+    .container {
+        max-width: 100%; /* Full width */
+        padding: 10px; /* Less padding */
+    }
+
+    .joke, .crack {
+        font-size: 1em; /* Smaller font size */
+        max-height: 100px; /* Reduce height limit */
+    }
+
+    .btn {
+        font-size: 0.8em; /* Smaller font size */
+        padding: 8px 16px; /* Adjust padding */
+    }
+}
